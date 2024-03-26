@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Password Manager",
+  "version": "1.0",
+  "description": "A Chrome extension for managing passwords.",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage",
+    "http://localhost:3000/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
